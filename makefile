@@ -1,7 +1,7 @@
 MATHBOOK ?= ./mathbook
 NAME = smc-python-tutorial
 
-PHONY = default build html sagews update
+PHONY = clean default jupyter build html sagews update
 
 default: build
 
@@ -18,7 +18,17 @@ html: xml
 
 sagews:
 	@echo building sagews
+	xsltproc $(MATHBOOK)/xsl/mathbook-smc.xsl $(NAME).xml
+
+jupyter:
+	@echo building jupyter
+	xsltproc $(MATHBOOK)/xsl/mathbook-jupyter.xsl $(NAME).xml
 
 update:
-	@echo update: not implemented yet
+	@echo update
+	git pull
+	git submodule update --recursive
 
+clean:
+	git clean -fx
+	-rm -rf knowl/
