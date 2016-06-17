@@ -1,0 +1,3 @@
+[submodule "mathbook"]
+	path = mathbook
+	url = https://github.com/rbeezer/mathbook.git
