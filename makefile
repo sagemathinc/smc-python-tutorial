@@ -9,7 +9,7 @@ build: html
 
 xml: $(NAME).xml
 
-$(NAME).xml: $(NAME).pug
+$(NAME).xml: $(NAME).pug $(wildcard *.pug)
 	./node_modules/.bin/pug --pretty --extension xml $(NAME).pug
 
 html: xml
