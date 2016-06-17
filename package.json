@@ -1,0 +1,15 @@
+{
+  "name": "smc-python-tutorial",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "pug": "^2.0.0-beta3",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SageMath, Inc.",
+  "license": "CC-BY-4.0"
+}

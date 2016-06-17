@@ -1,6 +1,14 @@
 # SMC Python Tutorial
 
+## Installation
+
+1. Clone repository with `--recursive` to also checkout the mathbook repository
+1. `npm install` -- to get pug
+1. `make`
+
 ## Authors
+
+* Christine Miles
 
 ## License
 
