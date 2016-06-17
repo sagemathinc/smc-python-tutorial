@@ -8,11 +8,18 @@
 
 ## Building
 
-1. `make`
+* html: `make` or `make html`
+* pdf: `make pdf`
+* jupyter: `make jupyter` for the ipynb files
+* sagews: `make sagews`
 
 ### Update
 
 1. `make update`
+
+### Cleaning up
+
+1. `make clean`
 
 ## Contibuting
 

@@ -1,6 +1,14 @@
 node_modules/
 
 knowl/
+
 *.html
 *.xml
 *.ipynb
+*.tex
+*.pdf
+*.out
+*.log
+*.fls
+*.fdb_latexmk
+*.aux
