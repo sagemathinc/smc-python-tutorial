@@ -1,0 +1,56 @@
+title The very first steps
+
+introduction
+    p.
+        In this lesson you will learn:
+    ul
+        li how to execute code within Sage
+        li the importance of syntax
+        li common errors
+        li strings
+        li how to code strings with special characters
+
+    p Key Terms
+
+    ul
+        li Print
+        li Syntax
+        li String
+        li Escaping
+
+section(xml:id='section-arithmetic')
+    title Arithmetic operations in Python
+
+    p.
+        Arithmetic operations in Python 2.
+    sage(language='python')
+        input
+            | print 2 + 2
+            | print 10 - 5
+            | print 4 * 4
+            | print 8 / 2
+            | print 5*50
+        output
+            | 4
+            | 5
+            | 16
+            | 4
+            | 250
+    p.
+        Use <c>from __future__ import division</c> to switch to natural division.
+    sage(language='python')
+        input
+            | from __future__ import division
+            | print 8 / 3
+
+
+    //- I fear that sage cells in exercises are broken
+    exercise(xml:id="exercise-1")
+        title Excercise 1
+        statement
+            p Write ...
+            sage(language='python')
+                input
+                    | print 1 + 1
+        hint.
+            p Write something

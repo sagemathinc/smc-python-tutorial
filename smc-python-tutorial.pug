@@ -1,24 +1,46 @@
 doctype xml
 
-mathbook
+mathbook(xml:lang="en-US")
 
     docinfo
 
-    article(xml:id="smc-python-tutorial")
-        title SMC Python Tutorial
+    book(xml:id="smc-python-tutorial")
+        title Python for Math and Science
+        subtitle A casual introduction to programming with Python
 
         frontmatter
             titlepage
                 author
-                    personname Christine Miles and Timothy Clemans
+                    personname Harald Schilly
+                author
+                    personname Christine Miles
+                author
+                    personname Timothy Clemans
 
                 date
                     today/
 
-            abstract
+            preface
                 p.
-                    This is an introduction to Python for working with SageMath
+                    This tutorial is intended for ...
+                p.
+                    This is an introduction to Python for mathematicians and scientists.
+                    It prepares you to work with SageMath, PyData tools and many other packages.
 
-        include ./chapter-1.pug
-        include ./chapter-2.pug
-        include ./chapter-3.pug
+
+        chapter(xml:id="cc-intro")
+        include cc-quickstart.pug
+
+        chapter(xml:id="chap-introduction")
+        include basics-intro.pug
+
+        chapter(xml:id='basics-programming')
+        include basics-programming.pug
+
+        chapter(xml:id="basics-strings")
+        include basics-strings.pug
+
+        chapter(xml:id="basics-syntax")
+        include basics-syntax.pug
+
+        chapter(xml:id='ch-techniques')
